@@ -39,11 +39,14 @@ input, button, p  {
         box-sizing: border-box;
         width: 100%;
         font-size: 16px;
-        height: 40px;
+        height: 50px;
         border-radius: 4px;
         outline: none;
         padding: 0 15px;
         border: 1px solid#CACACA;
+        &:focus {
+            border-bottom-width: 2px;
+        }
 
     }
 
@@ -57,6 +60,10 @@ input, button, p  {
         border-radius: 6px;
         height: 50px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: rgb(83, 126, 243);
+        }
     }
 
     p {
@@ -119,5 +126,21 @@ input, button, p  {
         transform: translateY(-50%);
         width: 30px;
         height: 30px;
+    }
+}
+.create-password-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    input {
+       
+    }
+    img {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        color: gray;
+        transform: translateY(-50%);
+
     }
 }
