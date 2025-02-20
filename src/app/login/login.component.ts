@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  show: boolean = false;
 
+  switchEye() {
+    this.show = !this.show
+  }
 }

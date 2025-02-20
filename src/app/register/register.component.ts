@@ -8,5 +8,12 @@ import { Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router'
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
+  showCreate: boolean = false;
+  showConfirm: boolean = false;
 
+
+  switchEye(input: string) {
+    input === 'create' ?  (this.showCreate = !this.showCreate) : (this.showConfirm = !this.showConfirm);
+
+  }
 }

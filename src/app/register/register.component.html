@@ -6,12 +6,12 @@
             <input placeholder="Last name" type="text">
             <input placeholder="Email" type="email">
             <div class="create-password-container">
-                <input placeholder="Create Password" type="password">
-                <img src="./img/bx-hide.svg" alt="">
+                <input [type]="showCreate ?  'text' : 'password'" placeholder="Create Password" type="password">
+                <img (click)="switchEye('create')" [src]="showCreate ?  './img/show-eye.png': './img/hide-eye.svg'" alt="">
             </div>
             <div class="create-password-container">
-                <input placeholder="Confirm Password" type="password">
-                <img src="./img/bx-hide.svg" alt="">
+                <input [type]="showConfirm ?  'text' : 'password'" placeholder="Confirm Password" type="password">
+                <img (click)="switchEye('confirm')" [src]="showConfirm ?  './img/show-eye.png': './img/hide-eye.svg'" src="./img/bx-hide.svg" alt="">
             </div>
 
 

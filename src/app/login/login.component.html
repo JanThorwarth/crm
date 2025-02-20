@@ -4,8 +4,8 @@
         <div class="input-container">
             <input placeholder="Email" type="email">
             <div class="create-password-container">
-                <input placeholder="Create Password" type="password">
-                <img src="./img/bx-hide.svg" alt="">
+                <input [type]="show ? 'text' : 'password'" placeholder="Password" type="password">
+                <img (click)="switchEye()" [src]="show ? './img/show-eye.png' : './img/hide-eye.svg'" alt="">
             </div>
 
 
